@@ -1,0 +1,7 @@
+
+# pixi environments
+.pixi
+*.egg-info
+.sesskey
+.DS_STORE
+__pycache__

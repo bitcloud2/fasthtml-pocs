@@ -1,0 +1,24 @@
+[project]
+authors = [{name = "bitcloud2", email = "bitcloud22@gmail.com"}]
+dependencies = ["python-fasthtml"]
+description = "Proof of concepts using fasthtml."
+name = "fasthtml-pocs"
+requires-python = ">= 3.11"
+version = "0.1.0"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["osx-64"]
+
+[tool.pixi.pypi-dependencies]
+fasthtml_pocs = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+
+[tool.pixi.dependencies]
+python-fasthtml = ">=0.9.1,<0.10"
+huggingface_hub = ">=0.30.2,<0.31"
